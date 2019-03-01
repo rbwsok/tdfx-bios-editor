@@ -1,0 +1,1166 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG DIALOG DISCARDABLE  0, 0, 408, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "tdfx bios editor"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,1,1,405,188
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 151, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,34,60,82,14
+    CONTROL         105,IDC_STATIC,"Static",SS_BITMAP,6,16,47,20
+    LTEXT           "tdfx bios editor v1.62",IDC_STATIC,62,10,65,10
+    LTEXT           "(c) Rainbow '2004",IDC_STATIC,65,22,60,8
+    LTEXT           "e-mail:",IDC_STATIC,62,33,20,8
+    EDITTEXT        IDC_MAIL,85,33,46,12,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_WEB,57,45,82,12,ES_READONLY | NOT WS_BORDER
+END
+
+IDD_FONTS DIALOG DISCARDABLE  0, 0, 344, 159
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Font 8x8",IDC_8X8,"Button",BS_AUTORADIOBUTTON,11,31,45,
+                    11
+    CONTROL         "Font 8x14",IDC_8X14,"Button",BS_AUTORADIOBUTTON,11,42,
+                    45,11
+    CONTROL         "Font 8x16",IDC_8X16,"Button",BS_AUTORADIOBUTTON,11,53,
+                    45,11
+    PUSHBUTTON      "Load Font",IDC_LOADFONT,9,73,61,15
+    LTEXT           "offset:",IDC_STATIC,9,114,22,10
+    LTEXT           "offset fix-up table:",IDC_STATIC,9,129,56,10
+    PUSHBUTTON      "Save Font",IDC_SAVEFONT,9,92,61,15
+    PUSHBUTTON      "0",IDC_OFFSETFONT,31,112,28,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETTABLE,68,128,30,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "Alternative searching (method 2)",IDC_ALTERNATIVESEARCH,
+                    216,5,112,13
+    PUSHBUTTON      "Alternative searching (method 1)",
+                    IDC_ALTERNATIVESEARCH2,99,5,112,13
+END
+
+IDD_DUMP DIALOG DISCARDABLE  0, 0, 401, 166
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_RICHEDIT1,"RICHEDIT",ES_MULTILINE | ES_READONLY | 
+                    WS_BORDER | WS_VSCROLL | WS_TABSTOP,0,0,399,145
+    PUSHBUTTON      "Apply",IDC_APPLY,259,149,53,14,WS_DISABLED
+    PUSHBUTTON      "Restore",IDC_RESTORE,319,149,53,14
+END
+
+IDD_OTHER DIALOG DISCARDABLE  0, 0, 377, 170
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Label:",IDC_STATIC,8,3,23,10
+    EDITTEXT        IDC_VIEWSTARTUP,8,27,261,45,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_OEMCONVERT
+    EDITTEXT        IDC_VIEWSTARTUP2,8,89,261,47,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_OEMCONVERT
+    LTEXT           "Length:",IDC_STATIC,274,39,27,9
+    LTEXT           "0",IDC_LENVS,301,39,38,10
+    LTEXT           "Max length:",IDC_STATIC,274,51,39,9
+    LTEXT           "0",IDC_MAXLEN1,314,51,27,10
+    LTEXT           "Length:",IDC_STATIC,274,101,27,9
+    LTEXT           "0",IDC_LENVS2,301,101,38,10
+    LTEXT           "Max length:",IDC_STATIC,274,112,39,9
+    LTEXT           "0",IDC_MAXLEN2,314,112,27,10
+    LTEXT           "offset:",IDC_STATIC,8,15,22,10
+    LTEXT           "offset:",IDC_STATIC,7,77,22,10
+    LTEXT           "BIOS date (mm/dd/yy):",IDC_STATIC,8,142,74,8
+    EDITTEXT        IDC_BIOSDATE,84,141,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_APPLY,259,149,53,14,WS_DISABLED
+    PUSHBUTTON      "Restore",IDC_RESTORE,319,149,53,14
+    LTEXT           "offset:",IDC_STATIC,140,142,22,10
+    PUSHBUTTON      "0",IDC_OFFSETVS1,30,13,33,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETVS2,29,75,33,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETDATA,162,141,33,12,BS_LEFT | BS_FLAT
+END
+
+IDD_REGISTERS DIALOG DISCARDABLE  0, 0, 387, 169
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "PCIInit0:",IDC_STATIC,10,18,27,8
+    EDITTEXT        IDC_PCIINIT0,58,17,44,12,ES_AUTOHSCROLL
+    LTEXT           "MiscInit0:",IDC_STATIC,10,31,29,8
+    EDITTEXT        IDC_MISCINIT0,58,30,44,12,ES_AUTOHSCROLL
+    LTEXT           "MiscInit1:",IDC_STATIC,10,44,29,8
+    EDITTEXT        IDC_MISCINIT1,58,43,44,12,ES_AUTOHSCROLL
+    LTEXT           "DramInit0:",IDC_STATIC,10,57,32,8
+    EDITTEXT        IDC_DRAMINIT0,58,56,44,12,ES_AUTOHSCROLL
+    LTEXT           "DramInit1:",IDC_STATIC,10,70,32,8
+    EDITTEXT        IDC_DRAMINIT1,58,69,44,12,ES_AUTOHSCROLL
+    LTEXT           "AgpInit0:",IDC_STATIC,10,83,32,8
+    EDITTEXT        IDC_AGPINIT0,58,82,44,12,ES_AUTOHSCROLL
+    LTEXT           "PLLCtrl1:",IDC_STATIC,10,97,32,8
+    EDITTEXT        IDC_PLLCTRL0,58,95,44,12,ES_AUTOHSCROLL
+    LTEXT           "SGRAMmode:",IDC_STATIC,9,123,45,8
+    EDITTEXT        IDC_SGRAMMODE,58,121,44,12,ES_AUTOHSCROLL
+    LTEXT           "offset:",IDC_STATIC,106,7,24,10
+    LTEXT           "0",IDC_SPEED,161,97,49,8
+    LTEXT           "PLLCtrl2:",IDC_STATIC,10,111,32,8
+    EDITTEXT        IDC_PLLCTRL1,58,108,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_CPCIINIT0,141,19,17,10
+    PUSHBUTTON      "...",IDC_CMISCINIT0,141,31,17,10
+    PUSHBUTTON      "...",IDC_CMISCINIT1,141,44,17,10
+    PUSHBUTTON      "...",IDC_CDRAMINIT0,141,57,17,10
+    PUSHBUTTON      "...",IDC_CDRAMINIT1,141,70,17,10
+    PUSHBUTTON      "...",IDC_CAGPINIT0,141,83,17,10
+    PUSHBUTTON      "...",IDC_CPLLCTRL0,141,96,17,10
+    PUSHBUTTON      "...",IDC_CSGRAMMODE,141,122,17,10
+    PUSHBUTTON      "Apply",IDC_APPLY,259,149,53,14,WS_DISABLED
+    PUSHBUTTON      "Restore",IDC_RESTORE,319,149,53,14
+    PUSHBUTTON      "0",IDC_OFFSETPCIINIT0,104,17,34,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETMISCINIT0,104,30,34,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETMISCINIT1,104,43,34,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETDRAMINIT0,104,56,34,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETDRAMINIT1,104,69,34,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETAGPINIT0,104,82,34,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETPLLCTRL0,104,95,34,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETPLLCTRL1,104,108,34,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETSGRAMMODE,104,121,34,12,BS_LEFT | BS_FLAT
+    EDITTEXT        IDC_CMPPCIINIT0,212,17,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CMPMISCINIT0,212,30,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CMPMISCINIT1,212,43,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CMPDRAMINIT0,212,56,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CMPDRAMINIT1,212,69,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CMPAGPINIT0,212,82,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CMPPLLCTRL0,212,95,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CMPSGRAMMODE,212,121,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CMPPLLCTRL1,212,108,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Compare",IDC_COMPARE,199,149,53,14
+    LTEXT           "None",IDC_FILE2,212,6,150,10
+    LTEXT           "",IDC_CMPSPEED,280,97,54,8
+    LTEXT           "",IDC_MMPCIINIT0,258,19,26,8
+    LTEXT           "",IDC_MMMISCINIT0,258,32,30,8
+    LTEXT           "",IDC_MMMISCINIT1,258,45,28,8
+    LTEXT           "",IDC_MMDRAMINIT0,258,58,28,8
+    LTEXT           "",IDC_MMDRAMINIT1,258,71,26,8
+    LTEXT           "",IDC_MMAGPINIT0,258,84,28,8
+    LTEXT           "",IDC_MMPLLCTRL0,258,97,19,8
+    LTEXT           "",IDC_MMPLLCTRL1,258,110,24,8
+    LTEXT           "",IDC_MMSGRAMMODE,258,123,26,8
+END
+
+IDD_PCIINIT0 DIALOG DISCARDABLE  0, 0, 307, 239
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "pciInit0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,189,216,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,245,216,50,14
+    LTEXT           "PCI initialization register",IDC_STATIC,5,5,77,8
+    LTEXT           "Value:",IDC_STATIC,5,17,23,10
+    LTEXT           "Static",IDC_PCIINIT0_BIN,75,17,146,9
+    LTEXT           "Static",IDC_PCIINIT0_HEX,30,17,37,11
+    LTEXT           "bits:",IDC_STATIC,5,28,15,8
+    LTEXT           "0..1",IDC_STATIC,5,37,15,8
+    LTEXT           "2..6",IDC_STATIC,5,48,15,8
+    LTEXT           "7",IDC_STATIC,5,60,15,8
+    EDITTEXT        IDC_EDIT1,29,47,26,12,ES_AUTOHSCROLL
+    LTEXT           "Reserved",IDC_STATIC,29,37,35,8
+    LTEXT           "Reserved",IDC_STATIC,29,60,35,8
+    LTEXT           "(0..31) - PCI FIFO Empty Entries Low Water Mark.",
+                    IDC_STATIC,85,48,165,8
+    LTEXT           "8",IDC_STATIC,5,72,15,8
+    EDITTEXT        IDC_EDIT2,29,70,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Wait state cycles for PCI read accesses (0=1 ws, 1=2 ws).",
+                    IDC_STATIC,85,72,206,8
+    LTEXT           "9",IDC_STATIC,5,86,15,8
+    EDITTEXT        IDC_EDIT3,29,84,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Wait state cycles for PCI write accesses (0=no ws, 1=one ws).",
+                    IDC_STATIC,85,86,221,8
+    LTEXT           "10",IDC_STATIC,5,98,15,8
+    LTEXT           "Reserved",IDC_STATIC,29,98,35,8
+    LTEXT           "11",IDC_STATIC,5,109,15,8
+    EDITTEXT        IDC_EDIT4,29,107,26,13,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Disable PCI IO access retries.",IDC_STATIC,85,
+                    109,126,8
+    LTEXT           "12",IDC_STATIC,5,123,15,8
+    EDITTEXT        IDC_EDIT5,29,121,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Disable PCI Memory access retries.",IDC_STATIC,
+                    85,123,178,8
+    LTEXT           "13..17",IDC_STATIC,5,137,20,8
+    EDITTEXT        IDC_EDIT6,29,135,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..31) - Retry interval, less 8 clocks.",IDC_STATIC,85,
+                    137,115,8
+    LTEXT           "18",IDC_STATIC,5,151,20,8
+    EDITTEXT        IDC_EDIT7,29,148,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - PCI Interrupt Enable.",IDC_STATIC,85,151,115,8
+    LTEXT           "19",IDC_STATIC,5,163,20,8
+    EDITTEXT        IDC_EDIT8,29,161,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - PCI Interrupt Time Out Enable.",IDC_STATIC,85,
+                    163,143,8
+    LTEXT           "20..25",IDC_STATIC,5,177,20,8
+    EDITTEXT        IDC_EDIT9,29,175,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..63) - PCI Fifo read threshold.",IDC_STATIC,85,177,
+                    115,8
+    LTEXT           "26",IDC_STATIC,5,191,20,8
+    EDITTEXT        IDC_EDIT10,29,188,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Force PCI/CMD Frame buffer accesses to high priority.",
+                    IDC_STATIC,85,191,204,8
+    LTEXT           "27..28",IDC_STATIC,5,204,20,8
+    EDITTEXT        IDC_EDIT11,29,202,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - PCI fifo to LFB write timeout in MCLKs.",
+                    IDC_STATIC,85,204,145,8
+    LTEXT           "cmp:",IDC_STATIC,61,28,15,8
+    EDITTEXT        IDC_EDIT12,56,46,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT13,56,70,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT14,56,84,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT15,56,107,26,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT16,56,121,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT17,56,134,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT18,56,148,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT19,56,161,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT20,56,174,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT21,56,188,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT22,56,201,26,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_MISCINIT0 DIALOG DISCARDABLE  0, 0, 330, 279
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "miscInit0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,207,259,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,269,259,50,14
+    LTEXT           "Misc. initialization register0",IDC_STATIC,4,5,89,8
+    LTEXT           "Value:",IDC_STATIC,5,17,23,10
+    LTEXT           "Static",IDC_MISCINIT0_BIN,75,17,179,9
+    LTEXT           "Static",IDC_MISCINIT0_HEX,30,17,37,11
+    LTEXT           "0",IDC_STATIC,5,38,15,8
+    EDITTEXT        IDC_MEDIT1,29,37,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - FBI Graphics Reset (0=run, 1=reset).",
+                    IDC_STATIC,85,38,165,8
+    LTEXT           "bits:",IDC_STATIC,5,27,15,8
+    LTEXT           "1",IDC_STATIC,5,51,15,8
+    EDITTEXT        IDC_MEDIT2,29,50,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - FBI FIFO Reset (0=run, 1=reset).",IDC_STATIC,
+                    85,51,165,8
+    LTEXT           "2",IDC_STATIC,5,64,15,8
+    EDITTEXT        IDC_MEDIT3,29,63,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Byte swizzle incoming register writes (1=enable). [Napalm - reserved].",
+                    IDC_STATIC,85,64,239,8
+    LTEXT           "3",IDC_STATIC,5,78,15,8
+    EDITTEXT        IDC_MEDIT4,29,76,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Word swizzle incoming register writes (1=enable). [Napalm - reserved].",
+                    IDC_STATIC,85,78,243,8
+    LTEXT           "4",IDC_STATIC,5,91,15,8
+    EDITTEXT        IDC_MEDIT5,29,89,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Video Timing Reset (0=run, 1=reset).",
+                    IDC_STATIC,85,91,177,8
+    LTEXT           "5",IDC_STATIC,5,104,15,8
+    EDITTEXT        IDC_MEDIT6,29,102,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - 2D Graphics Reset (0=run, 1=reset).",
+                    IDC_STATIC,85,104,177,8
+    LTEXT           "6",IDC_STATIC,5,117,15,8
+    EDITTEXT        IDC_MEDIT7,29,115,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Memory Timing Reset (0=run, 1=reset).",
+                    IDC_STATIC,85,117,177,8
+    LTEXT           "7",IDC_STATIC,5,130,15,8
+    EDITTEXT        IDC_MEDIT8,29,128,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - VGA Video Timing Reset (0=run, 1=reset).",
+                    IDC_STATIC,85,130,177,8
+    LTEXT           "8..10",IDC_STATIC,5,143,20,8
+    EDITTEXT        IDC_MEDIT9,29,141,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..7) - Programmable delay to be added to the blank signal before it             outputs to the TV out interface.",
+                    IDC_STATIC,85,143,215,17
+    LTEXT           "11..13",IDC_STATIC,5,160,20,8
+    EDITTEXT        IDC_MEDIT10,29,159,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..7) - Programmable delay to be added to the vsync and hsync               signals before they are output to the TV out interface.",
+                    IDC_STATIC,85,160,207,17
+    LTEXT           "14..16",IDC_STATIC,5,179,20,8
+    EDITTEXT        IDC_MEDIT11,29,177,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..7) - Programmable delay to be added to the vsync and hsync               signals before they are output to the monitor.",
+                    IDC_STATIC,85,179,207,17
+    LTEXT           "17",IDC_STATIC,5,192,15,8
+    LTEXT           "Reserved",IDC_STATIC,29,192,35,8
+    LTEXT           "18..29",IDC_STATIC,5,204,20,8
+    EDITTEXT        IDC_MEDIT12,29,203,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..4095) - Y Origin Swap subtraction value.",
+                    IDC_STATIC,85,204,177,8
+    LTEXT           "30",IDC_STATIC,5,217,20,8
+    EDITTEXT        IDC_MEDIT13,29,216,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Byte swizzle incoming non modal LFB writes (1=enable).             [Napalm - miscInit1 address space alias control]",
+                    IDC_STATIC,85,217,199,18
+    LTEXT           "31",IDC_STATIC,5,238,20,8
+    EDITTEXT        IDC_MEDIT14,29,236,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Word swizzle incoming non modal LFB writes (1=enable).              [Napalm - VMI host port control]",
+                    IDC_STATIC,85,238,205,18
+    EDITTEXT        IDC_MEDIT15,56,37,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT16,56,49,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT17,56,62,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT18,56,76,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT19,56,89,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT20,56,102,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT21,56,115,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT22,56,128,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT23,56,141,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT24,56,158,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT25,56,177,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT26,56,203,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT27,56,216,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MEDIT28,56,236,26,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "cmp:",IDC_STATIC,61,26,15,8
+END
+
+IDD_MISCINIT1 DIALOG DISCARDABLE  0, 0, 535, 242
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "miscInit1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,420,222,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,476,222,50,14
+    LTEXT           "Misc. initialization register1",IDC_STATIC,4,3,89,8
+    LTEXT           "Value:",IDC_STATIC,5,12,23,10
+    LTEXT           "Static",IDC_MISCINIT1_BIN,75,12,179,9
+    LTEXT           "Static",IDC_MISCINIT1_HEX,30,12,37,8
+    LTEXT           "0",IDC_STATIC,5,31,15,8
+    EDITTEXT        IDC_NEDIT1,29,30,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - invert_clut_address.",IDC_STATIC,85,31,93,8
+    LTEXT           "bits:",IDC_STATIC,5,21,15,8
+    LTEXT           "1..2",IDC_STATIC,5,44,15,8
+    EDITTEXT        IDC_NEDIT2,29,43,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - tri_mode – triangle iterator mode.",IDC_STATIC,
+                    85,44,127,8
+    LTEXT           "3",IDC_STATIC,5,58,15,8
+    EDITTEXT        IDC_NEDIT3,29,56,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Enable Sub Vendor/ Subsystem ID writes.",
+                    IDC_STATIC,85,57,155,8
+    LTEXT           "4",IDC_STATIC,5,71,15,8
+    EDITTEXT        IDC_NEDIT4,29,69,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Enable ROM writes.",IDC_STATIC,85,71,128,8
+    LTEXT           "5",IDC_STATIC,5,83,15,8
+    EDITTEXT        IDC_NEDIT5,29,82,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Alternate triangle addressing map.",IDC_STATIC,
+                    85,83,132,8
+    LTEXT           "6",IDC_STATIC,5,96,15,8
+    EDITTEXT        IDC_NEDIT6,29,95,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Disable texture mapping.",IDC_STATIC,85,96,101,
+                    8
+    LTEXT           "7",IDC_STATIC,5,109,15,8
+    EDITTEXT        IDC_NEDIT7,29,108,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Power Down CLUT.",IDC_STATIC,85,109,107,8
+    LTEXT           "8",IDC_STATIC,5,122,15,8
+    EDITTEXT        IDC_NEDIT8,29,121,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Power Down DAC.",IDC_STATIC,85,122,113,8
+    LTEXT           "9",IDC_STATIC,5,134,15,8
+    EDITTEXT        IDC_NEDIT9,29,134,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Power Down Video PLL.",IDC_STATIC,85,134,133,8
+    LTEXT           "10",IDC_STATIC,5,148,15,8
+    EDITTEXT        IDC_NEDIT10,29,147,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Power Down Graphics PLL.",IDC_STATIC,85,148,
+                    126,8
+    LTEXT           "11",IDC_STATIC,5,161,15,8
+    EDITTEXT        IDC_NEDIT11,29,160,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Power Down Memory PLL.",IDC_STATIC,85,161,122,
+                    8
+    LTEXT           "12..14",IDC_STATIC,5,174,20,8
+    EDITTEXT        IDC_NEDIT12,29,173,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..7) - Block write threshold.",IDC_STATIC,85,174,92,8
+    LTEXT           "15",IDC_STATIC,5,187,15,8
+    EDITTEXT        IDC_NEDIT13,29,186,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Disable 2D Block write.",IDC_STATIC,85,187,104,
+                    8
+    LTEXT           "16",IDC_STATIC,5,200,15,8
+    EDITTEXT        IDC_NEDIT14,29,199,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Disable 2D stall on 3D synchronous dispatch.",
+                    IDC_STATIC,85,200,165,8
+    LTEXT           "17",IDC_STATIC,5,214,15,8
+    EDITTEXT        IDC_NEDIT15,29,212,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Disable 3D stall on 2D synchronous dispatch.",
+                    IDC_STATIC,85,214,165,8
+    LTEXT           "19",IDC_STATIC,240,50,15,8
+    EDITTEXT        IDC_NEDIT16,264,49,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Command Stream Reset.",IDC_STATIC,320,50,165,8
+    LTEXT           "18",IDC_STATIC,240,32,15,8
+    LTEXT           "(0..1) - Reserved. [Napalm - Disable broadcast of all TMU registers            to both TMUs when 2 pixel-per-clock operation is enabled].",
+                    IDC_STATIC,320,31,208,17
+    LTEXT           "24",IDC_STATIC,240,108,21,8
+    EDITTEXT        IDC_NEDIT17,264,106,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - PCI Fast device. Default strapped on VMI_DATA 0.",
+                    IDC_STATIC,320,108,185,8
+    LTEXT           "25",IDC_STATIC,240,121,21,8
+    EDITTEXT        IDC_NEDIT18,264,119,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - PCI BIOS Size. Default strapped on VMI_DATA 1.",
+                    IDC_STATIC,320,121,185,8
+    LTEXT           "26",IDC_STATIC,240,134,21,8
+    EDITTEXT        IDC_NEDIT19,264,132,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - PCI 66Mhz. Default strapped on VMI_DATA 2.",
+                    IDC_STATIC,320,134,185,8
+    LTEXT           "27",IDC_STATIC,240,147,21,8
+    EDITTEXT        IDC_NEDIT20,264,145,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - AGP Enabled. Default strapped on VMI_DATA 3.",
+                    IDC_STATIC,320,147,185,8
+    LTEXT           "28",IDC_STATIC,240,160,21,8
+    EDITTEXT        IDC_NEDIT21,264,159,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - PCI Device Type. Default strapped on VMI_DATA 4.",
+                    IDC_STATIC,320,160,188,8
+    EDITTEXT        IDC_NEDIT22,264,29,26,12,ES_AUTOHSCROLL
+    LTEXT           "20..21",IDC_STATIC,240,63,20,8
+    EDITTEXT        IDC_NEDIT23,264,62,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - Reserved [Napalm - Byte swizzle all reads and writes to and            from memBaseAddr1 address space address select control].",
+                    IDC_STATIC,320,63,209,17
+    LTEXT           "23",IDC_STATIC,240,95,15,8
+    LTEXT           "Reserved",IDC_STATIC,264,95,35,8
+    LTEXT           "22",IDC_STATIC,240,80,21,8
+    EDITTEXT        IDC_NEDIT24,264,78,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Reserved [Napalm - Byte swizzle all reads and writes to and            from memBaseAddr1 address space enable].",
+                    IDC_STATIC,320,80,209,16
+    LTEXT           "bits:",IDC_STATIC,240,21,15,8
+    LTEXT           "29",IDC_STATIC,240,174,21,8
+    EDITTEXT        IDC_NEDIT25,264,172,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Reserved. [Napalm - pd pin value (input value of the pd pin)].",
+                    IDC_STATIC,320,174,213,8
+    LTEXT           "30..31",IDC_STATIC,240,188,21,8
+    EDITTEXT        IDC_NEDIT26,264,186,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - Reserved. [Napalm - pd signal control (0,1=tristate, 2=drive               low, 3=drive high)].",
+                    IDC_STATIC,320,188,212,16
+    EDITTEXT        IDC_NEDIT27,56,30,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT28,56,43,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT29,56,56,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT30,56,69,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT31,56,81,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT32,56,94,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT33,56,108,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT34,56,121,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT35,56,134,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT36,56,147,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT37,56,160,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT38,56,173,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT39,56,185,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT40,56,198,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT41,56,212,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT42,291,49,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT43,291,105,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT44,291,118,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT45,291,132,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT46,291,145,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT47,291,158,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT48,291,29,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT49,291,62,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT50,291,78,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT51,291,172,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEDIT52,291,185,26,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "cmp:",IDC_STATIC,61,20,15,8
+    LTEXT           "cmp:",IDC_STATIC,296,19,15,8
+END
+
+IDD_DRAMINIT0 DIALOG DISCARDABLE  0, 0, 332, 306
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "dramInit0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,213,286,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,271,286,50,14
+    LTEXT           "Dram initialization register0",IDC_STATIC,3,3,89,8
+    LTEXT           "Value:",IDC_STATIC,5,15,23,10
+    LTEXT           "Static",IDC_DRAMINIT0_BIN,75,15,179,9
+    LTEXT           "Static",IDC_DRAMINIT0_HEX,29,15,37,11
+    LTEXT           "0..1",IDC_STATIC,5,36,15,8
+    EDITTEXT        IDC_DEDIT1,29,35,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - tRRD – row active to row active (1-4 clks).",
+                    IDC_STATIC,86,36,165,8
+    LTEXT           "bits:",IDC_STATIC,5,25,15,8
+    LTEXT           "2..3",IDC_STATIC,5,49,15,8
+    EDITTEXT        IDC_DEDIT2,29,48,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - tRCD – RAS to CAS delay (1-4 clks).",
+                    IDC_STATIC,86,49,165,8
+    LTEXT           "4..5",IDC_STATIC,5,63,15,8
+    EDITTEXT        IDC_DEDIT3,29,61,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - tRP – row precharge (1-4 clks).",IDC_STATIC,86,
+                    63,165,8
+    LTEXT           "6..9",IDC_STATIC,5,75,15,8
+    EDITTEXT        IDC_DEDIT4,29,74,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..15) - tRAS – minimum active time (1-16 clks).",
+                    IDC_STATIC,86,75,165,8
+    LTEXT           "10..13",IDC_STATIC,5,88,20,8
+    EDITTEXT        IDC_DEDIT5,29,87,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..15) - tRC – minimum row cycle time (1-16 clks).",
+                    IDC_STATIC,86,88,165,8
+    LTEXT           "14..15",IDC_STATIC,5,101,20,8
+    EDITTEXT        IDC_DEDIT6,29,100,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - tCAS latency (1-4 clks).",IDC_STATIC,86,101,
+                    165,8
+    LTEXT           "16",IDC_STATIC,5,115,20,8
+    EDITTEXT        IDC_DEDIT7,29,114,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - tMRS mode and special mode register cycle time (1-2 clks).",
+                    IDC_STATIC,86,115,208,8
+    LTEXT           "17",IDC_STATIC,5,128,20,8
+    EDITTEXT        IDC_DEDIT8,29,127,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - tDQR Rd to DQM assertion delay (0-1 clks).",
+                    IDC_STATIC,86,128,208,8
+    LTEXT           "18",IDC_STATIC,5,141,20,8
+    EDITTEXT        IDC_DEDIT9,29,140,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - tBWC Block write cycle time (1-2 clks).",
+                    IDC_STATIC,86,141,208,8
+    LTEXT           "19",IDC_STATIC,5,155,20,8
+    EDITTEXT        IDC_DEDIT10,29,154,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - tWL WR to pre (1-2 clks).",IDC_STATIC,86,155,
+                    145,8
+    LTEXT           "20..21",IDC_STATIC,5,168,20,8
+    EDITTEXT        IDC_DEDIT11,29,167,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - tBWL BKWR to Pre (1-4 clks).",IDC_STATIC,86,
+                    168,170,8
+    LTEXT           "22",IDC_STATIC,5,182,20,8
+    EDITTEXT        IDC_DEDIT12,29,180,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - tRL RD to PRE (1-2 clks).",IDC_STATIC,86,182,
+                    170,8
+    LTEXT           "23",IDC_STATIC,5,195,20,8
+    EDITTEXT        IDC_DEDIT13,29,194,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - dont allow WR/BKWR to terminate RD, use BST.",
+                    IDC_STATIC,86,195,190,8
+    LTEXT           "24",IDC_STATIC,5,209,20,8
+    EDITTEXT        IDC_DEDIT14,29,207,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Disable the dead bus cycle btw. RD and WR.",
+                    IDC_STATIC,86,208,170,8
+    LTEXT           "25",IDC_STATIC,5,222,20,8
+    EDITTEXT        IDC_DEDIT15,29,220,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - SGRAM write per bit enable (0=disable, 1=enable).",
+                    IDC_STATIC,86,222,181,8
+    LTEXT           "26",IDC_STATIC,5,235,20,8
+    EDITTEXT        IDC_DEDIT16,29,233,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Number of Sgram/Sdram chipsets (0=1, 1=2).",
+                    IDC_STATIC,86,235,165,10
+    LTEXT           "27..29",IDC_STATIC,5,247,20,8
+    EDITTEXT        IDC_DEDIT17,29,246,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..7) - Sgram type (0=8Mbit, 1=16Mbit). [Napalm - Sgram/Sdram                type (0=8Mbit, 1=16Mbit, 2=32Mbit, 3=64Mbit, 4=128Mbit)].",
+                    IDC_STATIC,86,246,209,19
+    LTEXT           "30",IDC_STATIC,5,265,20,8
+    EDITTEXT        IDC_DEDIT18,29,263,26,13,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Reserved. [Napalm - mctl_dram_numbanks - number of sgram/sdram             internal banks (0=2 internal banks, 1=4 internal banks)].",
+                    IDC_STATIC,86,265,239,17
+    EDITTEXT        IDC_DEDIT19,56,35,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT20,56,48,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT21,56,61,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT22,56,73,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT23,56,86,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT24,56,100,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT25,56,113,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT26,56,126,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT27,56,140,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT28,56,153,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT29,56,166,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT30,56,180,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT31,56,193,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT32,56,206,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT33,56,220,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT34,56,233,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT35,56,246,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DEDIT36,56,262,26,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "cmp:",IDC_STATIC,61,25,15,8
+END
+
+IDD_DRAMINIT1 DIALOG DISCARDABLE  0, 0, 342, 311
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "dramInit1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,224,289,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,282,289,50,14
+    LTEXT           "Dram initialization register1",IDC_STATIC,3,3,89,8
+    LTEXT           "Value:",IDC_STATIC,5,14,23,10
+    LTEXT           "Static",IDC_DRAMINIT1_BIN,75,14,179,9
+    LTEXT           "Static",IDC_DRAMINIT1_HEX,29,14,37,11
+    LTEXT           "0",IDC_STATIC,5,36,15,8
+    EDITTEXT        IDC_TEDIT1,29,35,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Refresh Enable.",IDC_STATIC,84,36,165,8
+    LTEXT           "bits:",IDC_STATIC,5,25,15,8
+    LTEXT           "1..9",IDC_STATIC,5,49,15,8
+    EDITTEXT        IDC_TEDIT2,29,48,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..512) - Refresh_load Value. (Internal 14-bit counter 5 LSBs are 0x0).",
+                    IDC_STATIC,84,49,223,8
+    LTEXT           "10",IDC_STATIC,5,63,15,8
+    EDITTEXT        IDC_TEDIT3,29,61,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Video arbitration priority. (0=normal, 1=aggressive).",
+                    IDC_STATIC,84,63,188,8
+    LTEXT           "11",IDC_STATIC,5,75,15,8
+    EDITTEXT        IDC_TEDIT4,29,74,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Triple buffer enable (0=double buffering, 1=triple buffering).",
+                    IDC_STATIC,84,75,210,8
+    LTEXT           "12",IDC_STATIC,5,88,15,8
+    EDITTEXT        IDC_TEDIT5,29,87,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Dither passthrough (0=dithering, 1=bypass dithering). [Napalm - Reserved].",
+                    IDC_STATIC,84,88,255,8
+    LTEXT           "13",IDC_STATIC,5,101,15,8
+    EDITTEXT        IDC_TEDIT6,29,100,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - sg_clk_nodelay – bypass the delay element.",
+                    IDC_STATIC,84,101,210,8
+    LTEXT           "14",IDC_STATIC,5,115,15,8
+    EDITTEXT        IDC_TEDIT7,29,114,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - sg_use_inv_sample – resample the flopped sgram data with             another negative-edge flop before flopping data with mclk.",
+                    IDC_STATIC,84,115,210,17
+    LTEXT           "15",IDC_STATIC,5,134,15,8
+    EDITTEXT        IDC_TEDIT8,29,132,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - sg_del_clk_invert – invert delayed clock before using it.",
+                    IDC_STATIC,84,134,210,8
+    LTEXT           "16..19",IDC_STATIC,5,147,20,8
+    EDITTEXT        IDC_TEDIT9,29,146,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..15) - sg_clk_adj – delay value for sgram read data sample clock.               (2-62 NAND gates of delay, in steps of 4).",
+                    IDC_STATIC,84,147,213,16
+    LTEXT           "20..23",IDC_STATIC,5,165,20,8
+    EDITTEXT        IDC_TEDIT10,29,163,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..15) - sg_oflop_del_adj – delay value for mclk (2-62 nand gates of delay, in               steps of 4) to transparent latch that sends fb_* off chip.",
+                    IDC_STATIC,84,165,244,16
+    LTEXT           "24",IDC_STATIC,5,183,15,8
+    EDITTEXT        IDC_TEDIT11,29,181,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - sg_oflop_trans_latch – forces latch for fb_* signals to be transparent.            (0=use delayed mclk to latch, 1=make latch always transparent).",
+                    IDC_STATIC,84,183,238,18
+    LTEXT           "25",IDC_STATIC,5,201,15,8
+    EDITTEXT        IDC_TEDIT12,29,200,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - mctl_short_power_on. Power on in 128 cycles. VMI_ADDR_1.",
+                    IDC_STATIC,84,201,220,8
+    LTEXT           "26",IDC_STATIC,5,215,15,8
+    EDITTEXT        IDC_TEDIT13,29,213,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - mctl_no_aggressive – turn off mem_ctrl’s aggressive row activation.",
+                    IDC_STATIC,84,215,237,8
+    LTEXT           "27",IDC_STATIC,5,228,15,8
+    EDITTEXT        IDC_TEDIT14,29,226,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - mctl_pagebreak – force a pagebreak for all accesses.",
+                    IDC_STATIC,84,228,210,8
+    LTEXT           "28",IDC_STATIC,5,241,15,8
+    EDITTEXT        IDC_TEDIT15,29,239,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - mctl_tristate_outputs – force data outputs to be tristate.",
+                    IDC_STATIC,84,241,210,8
+    LTEXT           "29",IDC_STATIC,5,254,15,8
+    EDITTEXT        IDC_TEDIT16,29,252,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - mctl_no_vin_locking – prevent vin from locking the bus during             requesting. 0=allow locking, 1=prevent locking.",
+                    IDC_STATIC,84,254,219,17
+    LTEXT           "30",IDC_STATIC,5,272,15,8
+    EDITTEXT        IDC_TEDIT17,29,271,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Rev. B0 and after: mctl_type_sdram – (0=use SGRAMs,              1=use SDRAMs). VMI_ADDR_2.",
+                    IDC_STATIC,84,272,202,17
+    EDITTEXT        IDC_TEDIT18,56,35,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT19,56,48,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT20,56,61,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT21,56,73,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT22,56,86,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT23,56,100,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT24,56,113,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT25,56,132,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT26,56,145,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT27,56,163,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT28,56,181,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT29,56,200,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT30,56,213,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT31,56,225,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT32,56,238,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT33,56,252,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TEDIT34,56,270,26,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "cmp:",IDC_STATIC,61,25,15,8
+END
+
+IDD_AGPINIT0 DIALOG DISCARDABLE  0, 0, 301, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "agpInit0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,182,90,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,242,90,50,14
+    LTEXT           "AGP initialization register",IDC_STATIC,3,4,89,8
+    LTEXT           "Value:",IDC_STATIC,5,15,23,10
+    LTEXT           "Static",IDC_AGPINIT0_BIN,75,15,179,9
+    LTEXT           "Static",IDC_AGPINIT0_HEX,29,15,37,11
+    LTEXT           "0",IDC_STATIC,5,37,15,8
+    EDITTEXT        IDC_AEDIT1,29,36,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Force AGP request to be high priority. (0=Low, 1 = High).",
+                    IDC_STATIC,84,37,199,8
+    LTEXT           "bits:",IDC_STATIC,5,26,15,8
+    LTEXT           "1..3",IDC_STATIC,5,50,15,8
+    EDITTEXT        IDC_AEDIT2,29,49,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..7) - Maximum AGP request length. (0=1 octword, 7 = 8 octwords).",
+                    IDC_STATIC,84,50,215,8
+    LTEXT           "4..6",IDC_STATIC,5,63,15,8
+    EDITTEXT        IDC_AEDIT3,29,62,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..7) - AGP request fifo full threshold.",IDC_STATIC,
+                    84,63,199,8
+    LTEXT           "7..10",IDC_STATIC,5,76,17,8
+    EDITTEXT        IDC_AEDIT4,29,75,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..15) - AGP read fifo full threshold.",IDC_STATIC,84,
+                    76,199,8
+    EDITTEXT        IDC_AEDIT5,56,36,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AEDIT6,56,49,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AEDIT7,56,62,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AEDIT8,56,75,26,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "cmp:",IDC_STATIC,61,25,15,8
+END
+
+IDD_PLLCTRL0 DIALOG DISCARDABLE  0, 0, 278, 190
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "pllCtrl1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,162,168,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,219,168,50,14
+    LTEXT           "Control the frequency of the core clock and the video clock.",
+                    IDC_STATIC,5,5,191,8
+    LTEXT           "Value:",IDC_STATIC,5,17,23,10
+    LTEXT           "Static",IDC_PLLCTRL0_BIN,75,17,156,9
+    LTEXT           "Static",IDC_PLLCTRL0_HEX,30,17,37,11
+    LTEXT           "bits:",IDC_STATIC,5,28,15,8
+    LTEXT           "0..1",IDC_STATIC,5,39,15,8
+    EDITTEXT        IDC_PEDIT1,29,38,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - K, Post divider value",IDC_STATIC,85,39,165,8
+    LTEXT           "2..7",IDC_STATIC,5,52,15,8
+    EDITTEXT        IDC_PEDIT2,29,51,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..63) - M, PLL input divider",IDC_STATIC,85,52,165,8
+    LTEXT           "8..15",IDC_STATIC,5,65,17,8
+    EDITTEXT        IDC_PEDIT3,29,64,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..255) - N, PLL multiplier",IDC_STATIC,85,65,165,8
+    LTEXT           "16",IDC_STATIC,5,78,15,8
+    EDITTEXT        IDC_PEDIT4,29,77,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Test. (0=normal operation, 1 = CLK is output of VCO).",
+                    IDC_STATIC,85,78,189,8
+    LTEXT           "frequency = ",IDC_STATIC,5,91,40,8
+    LTEXT           "0",IDC_MGZ,45,91,84,8
+    LTEXT           "The general formula for output frequency:",IDC_STATIC,4,
+                    112,131,10
+    EDITTEXT        IDC_PEDIT5,56,38,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PEDIT6,56,51,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PEDIT7,56,64,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PEDIT8,56,77,26,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "cmp:",IDC_STATIC,61,27,15,8
+    LTEXT           "cmp frequency = ",IDC_STATIC,5,101,56,8
+    LTEXT           "0",IDC_CMPMGZ,61,102,84,8
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,60,126,152,34
+END
+
+IDD_SGRAMMODE DIALOG DISCARDABLE  0, 0, 227, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SGRAMmode"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,112,120,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,120,50,14
+    LTEXT           "SGRAM Control",IDC_STATIC,4,4,89,8
+    LTEXT           "Value:",IDC_STATIC,6,16,23,10
+    LTEXT           "Static",IDC_SGRAMMODE_BIN,76,16,151,9
+    LTEXT           "Static",IDC_SGRAMMODE_HEX,30,16,37,11
+    LTEXT           "0..2",IDC_STATIC,6,38,15,8
+    EDITTEXT        IDC_SEDIT1,30,36,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..7) - Burst Length.",IDC_STATIC,87,38,72,8
+    LTEXT           "bits:",IDC_STATIC,6,26,15,8
+    LTEXT           "3",IDC_STATIC,6,51,15,8
+    EDITTEXT        IDC_SEDIT2,30,49,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Burst Type.",IDC_STATIC,87,51,66,8
+    LTEXT           "4..6",IDC_STATIC,6,64,15,8
+    EDITTEXT        IDC_SEDIT3,30,62,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..7) - CAS Latency.",IDC_STATIC,87,64,74,8
+    LTEXT           "7..8",IDC_STATIC,6,77,15,8
+    EDITTEXT        IDC_SEDIT4,30,75,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..3) - Test Mode.",IDC_STATIC,87,77,67,8
+    LTEXT           "9",IDC_STATIC,6,90,15,8
+    EDITTEXT        IDC_SEDIT5,30,88,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - Write Burst Length.",IDC_STATIC,87,90,90,8
+    LTEXT           "10",IDC_STATIC,6,103,15,8
+    EDITTEXT        IDC_SEDIT6,30,101,26,12,ES_AUTOHSCROLL
+    LTEXT           "(0..1) - SGRAM-Defined.",IDC_STATIC,87,103,95,8
+    EDITTEXT        IDC_SEDIT7,57,36,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SEDIT8,57,49,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SEDIT9,57,62,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SEDIT10,57,75,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SEDIT11,57,88,26,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SEDIT12,57,101,26,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "cmp:",IDC_STATIC,62,26,15,8
+END
+
+IDD_PCIR DIALOG DISCARDABLE  0, 0, 379, 170
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Vendor ID:",IDC_STATIC,7,26,34,8
+    EDITTEXT        IDC_VENDORID,97,24,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "PCIR offset:",IDC_STATIC,7,7,38,10
+    LTEXT           "Device ID:",IDC_STATIC,7,38,34,8
+    EDITTEXT        IDC_DEVICEID,97,37,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Pointer to vital product data:",IDC_STATIC,7,51,89,8
+    EDITTEXT        IDC_PTV,97,50,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "PCI data structure length:",IDC_STATIC,7,64,80,8
+    EDITTEXT        IDC_PCISTRLEN,97,63,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "PCI structure rev:",IDC_STATIC,7,78,80,8
+    EDITTEXT        IDC_PCISTRREV,97,76,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Class code:",IDC_STATIC,7,91,80,8
+    EDITTEXT        IDC_CLASSCODE,97,89,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ROM Image size:",IDC_STATIC,7,103,80,8
+    EDITTEXT        IDC_IMAGELENGHT,97,102,40,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Rev level of code/data:",IDC_STATIC,7,117,80,8
+    EDITTEXT        IDC_REVLEVELCD,97,115,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Code Type:",IDC_STATIC,7,130,80,8
+    EDITTEXT        IDC_CODETYPE,97,128,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Indicator:",IDC_STATIC,7,143,80,8
+    EDITTEXT        IDC_INDICATOR,97,141,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_CC_COMMENT,143,91,128,8
+    LTEXT           "",IDC_VID_COMMENT,142,26,128,8
+    LTEXT           "",IDC_DID_COMMENT,142,38,128,8
+    PUSHBUTTON      "0",IDC_OFFSETPCIR,49,5,34,12,BS_LEFT | BS_FLAT
+    LTEXT           "",IDC_ROMIMAGESIZE,143,103,128,8
+END
+
+IDD_VESA DIALOG DISCARDABLE  0, 0, 379, 167
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Product name:",IDC_STATIC,8,19,47,8
+    EDITTEXT        IDC_VESA_PRODUCTNAME,64,18,158,12,ES_AUTOHSCROLL
+    LTEXT           "Product revision:",IDC_STATIC,8,34,54,8
+    EDITTEXT        IDC_VESA_PRODUCTREVISION,64,32,158,12,ES_AUTOHSCROLL
+    LTEXT           "Vendor name:",IDC_STATIC,8,48,45,8
+    EDITTEXT        IDC_VESA_VENDORNAME,64,46,158,12,ES_AUTOHSCROLL
+    LTEXT           "Vendor info:",IDC_STATIC,8,62,39,8
+    EDITTEXT        IDC_VESA_VENDORINFO,64,61,158,12,ES_AUTOHSCROLL
+    LTEXT           "offset:",IDC_STATIC,231,6,24,10
+    LTEXT           "Max length:",IDC_STATIC,270,6,39,9
+    LTEXT           "0",IDC_MAXLEN1,277,19,27,8
+    LTEXT           "0",IDC_MAXLEN3,277,48,27,8
+    LTEXT           "0",IDC_MAXLEN2,277,34,27,8
+    LTEXT           "0",IDC_MAXLEN4,277,62,27,8
+    PUSHBUTTON      "Apply",IDC_APPLY,259,149,53,14,WS_DISABLED
+    PUSHBUTTON      "Restore",IDC_RESTORE,319,149,53,14
+    PUSHBUTTON      "0",IDC_OFFSETPRODUCTNAME,229,18,34,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETPRODUCTREVISION,229,32,34,12,BS_LEFT | 
+                    BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETVENDORNAME,229,47,34,12,BS_LEFT | BS_FLAT
+    PUSHBUTTON      "0",IDC_OFFSETVENDORINFO,229,61,34,12,BS_LEFT | BS_FLAT
+END
+
+IDD_SELECTFONT DIALOG DISCARDABLE  0, 0, 285, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Font"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST1,8,35,37,71,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Code Page:",IDC_STATIC,8,23,40,9
+    PUSHBUTTON      "Apply",IDOK,5,122,52,16
+    PUSHBUTTON      "Cancel",IDCANCEL,5,143,52,16
+    CONTROL         "Font 8x16:",IDC_CHECK8X16,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,54,6,46,10
+    CONTROL         "Font 8x14:",IDC_CHECK8X14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,54,92,46,10
+    CONTROL         "Font 8x8:",IDC_CHECK8X8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,54,171,46,10
+END
+
+IDD_VIDEOMODES DIALOG DISCARDABLE  0, 0, 399, 172
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST1,3,6,277,58,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Rows-1:",IDC_STATIC,291,24,25,9
+    LTEXT           "Column:",IDC_STATIC,291,10,25,9
+    EDITTEXT        IDC_COLUMN,338,9,20,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ROWS,338,23,20,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "D",IDC_STATIC,361,10,8,9
+    LTEXT           "D",IDC_STATIC,361,24,8,9
+    LTEXT           "Char height:",IDC_STATIC,291,37,38,9
+    EDITTEXT        IDC_CHARHEIGHT,338,36,20,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "D",IDC_STATIC,361,38,8,9
+    LTEXT           "Regen length:",IDC_STATIC,291,50,45,9
+    EDITTEXT        IDC_REGENLENGTH,338,49,28,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "H",IDC_STATIC,369,51,8,9
+    LTEXT           "Sequencer:",IDC_STATIC,3,68,39,9
+    EDITTEXT        IDC_SEQ1,98,67,14,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "H",IDC_STATIC,158,69,8,9
+    EDITTEXT        IDC_SEQ2,112,67,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SEQ3,126,67,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SEQ4,140,67,14,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Misc.output:",IDC_STATIC,291,65,38,9
+    EDITTEXT        IDC_MISCOUTPUT,338,63,15,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "H",IDC_STATIC,357,65,8,9
+    LTEXT           "CRTC (0-24):",IDC_STATIC,3,83,42,9
+    EDITTEXT        IDC_CRTC1,98,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "H",IDC_STATIC,289,97,8,9
+    EDITTEXT        IDC_CRTC2,112,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC3,126,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC4,140,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC5,154,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC6,168,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC7,185,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC8,199,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC9,213,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC10,227,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC11,241,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC12,255,82,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC13,98,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC14,112,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC15,126,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC16,140,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC17,154,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC18,168,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC19,185,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC20,199,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC21,213,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC22,227,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC23,241,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC24,255,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CRTC25,272,95,14,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Attribute controller (0-19):",IDC_STATIC,3,111,80,9
+    EDITTEXT        IDC_AC1,98,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC2,112,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Graphics data controller (0-9):",IDC_STATIC,3,127,93,9
+    EDITTEXT        IDC_AC3,126,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC4,140,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC5,154,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC6,168,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC7,185,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC8,199,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC9,213,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC10,227,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC11,241,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC12,255,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC13,272,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC14,286,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC15,300,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC16,314,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC17,328,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC18,342,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC19,358,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AC20,372,110,14,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "H",IDC_STATIC,389,112,8,9
+    EDITTEXT        IDC_GDC1,98,126,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GDC2,112,126,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GDC3,126,126,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GDC4,140,126,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GDC5,154,126,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GDC6,168,126,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GDC7,185,126,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GDC8,199,126,14,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_GDC9,213,126,14,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "H",IDC_STATIC,231,128,8,9
+    CHECKBOX        "Native mode (non VGA)",IDC_NATIVEMODE,3,142,89,8
+    CHECKBOX        "Interlace",IDC_INTERLACE,3,152,45,8
+    CHECKBOX        "Native mode double scan",IDC_NATIVEMODEDS,3,161,93,8
+    LTEXT           "Desktop pixel format:",IDC_STATIC,105,144,66,8
+    EDITTEXT        IDC_DPF,174,142,14,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "CRTC [1B]:",IDC_STATIC,105,158,37,8
+    EDITTEXT        IDC_CRTC1B,174,156,14,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Index of parameter table (If non-zero): ",IDC_STATIC,
+                    194,144,117,8
+    EDITTEXT        IDC_INDPARAM,315,142,14,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Clock (If non-zero):",IDC_STATIC,194,158,62,8
+    EDITTEXT        IDC_CLOCK,315,156,30,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_LOGO DIALOG DISCARDABLE  0, 0, 392, 169
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Load Image",IDC_LOADIMAGE,7,8,55,14
+    LTEXT           "Name:",IDC_STATIC,8,28,21,9
+    LTEXT           "Width:",IDC_STATIC,8,37,21,9
+    LTEXT           "Height:",IDC_STATIC,8,45,22,9
+    LTEXT           "0",IDC_NAMEBMP,32,28,53,9
+    LTEXT           "0",IDC_WIDTH,32,37,43,9
+    LTEXT           "0",IDC_HEIGHT,32,46,50,9
+    EDITTEXT        IDC_STRING1,118,3,265,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STRING2,118,16,265,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STRING3,118,29,265,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STRING4,118,42,265,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STRING5,118,55,265,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_APPLY,319,149,53,14,WS_DISABLED
+    LTEXT           "String 1:",IDC_STATIC,89,5,26,9
+    LTEXT           "String 2:",IDC_STATIC,89,17,26,9
+    LTEXT           "String 3:",IDC_STATIC,89,30,26,9
+    LTEXT           "String 4:",IDC_STATIC,89,43,26,9
+    LTEXT           "String 5:",IDC_STATIC,89,56,26,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "Exit",                        ID_EXIT
+    MENUITEM "Load BIOS",                   ID_LOAD
+    MENUITEM "Reload BIOS",                 ID_RELOAD
+    MENUITEM "Save BIOS As...",             ID_SAVE
+    MENUITEM "Help",                        ID_HELP
+    MENUITEM "About",                       ID_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "WIEW1.BMP"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "formula.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_REGISTERS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_PCIINIT0, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_MISCINIT0, DIALOG
+    BEGIN
+        RIGHTMARGIN, 329
+    END
+
+    IDD_MISCINIT1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 492
+    END
+
+    IDD_SGRAMMODE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_SELECTFONT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 217
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,6
+ PRODUCTVERSION 1,0,0,6
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "tdfxbioseditor\0"
+            VALUE "FileVersion", "1.61\0"
+            VALUE "InternalName", "tdfxbioseditor\0"
+            VALUE "LegalCopyright", "Copyright © Rainbow '2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "tdfxbioseditor.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "tdfxbioseditor\0"
+            VALUE "ProductVersion", "1.61\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
